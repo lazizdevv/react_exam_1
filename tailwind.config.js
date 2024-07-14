@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
         open:['Open Sans', 'sans-serif'],
+        tail:['Yellowtail', 'cursive'],
       },
       colors: {
         primary: '#274C5B', // dark gray color
