@@ -18,7 +18,7 @@ export const HeaderBanner = () => {
           <h1 className="font-tail font-normal text-4xl text-left text-secondary">
             100% Natural Food
           </h1>
-          <h2 className="font-roboto font-extrabold text-[70px] h-[246px] border leading-[82px] text-left text-primary w-[530px] flex flex-col justify-start items-start p-0 tracking-normal">
+          <h2 className="font-roboto font-extrabold text-[70px] h-[246px] leading-[82px] text-left text-primary w-[530px] flex flex-col justify-start items-start p-0 tracking-normal">
             Choose the <br /> best <br /> healthier way
           </h2>
           <Button
