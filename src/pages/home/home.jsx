@@ -8,10 +8,12 @@ import { Button } from "../../components/ui/button";
 import { Arrow } from "../../components/arrow/arrow";
 import { galleryData } from "../../data/gallery";
 import { GalleryCard } from "../../components/gallery";
+import { HeaderBanner } from "../../components/header-banner/header-banner";
 
 export const Home = () => {
   return (
     <>
+      <HeaderBanner/>
       <div className="container mb-52">
         <div className="grid grid-cols-1 lg:grid-cols-2 my-[145px]">
           {offerBanner.map((offer) => (
@@ -55,7 +57,7 @@ export const Home = () => {
               <p className="font-tail font-normal text-4xl leading-[49px] text-secondary text-center lg:text-left">
                 Offer
               </p>
-              <h1 className="font-roboto font-extrabold text-[50px] text-center leading-[59px] text-primary">
+              <h1 className="font-roboto font-extrabold text-[50px] text-center leading-[59px] text-white">
                 We Offer Organic For You
               </h1>
             </div>

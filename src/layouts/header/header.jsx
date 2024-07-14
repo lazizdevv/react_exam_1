@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Logo } from "../../assets/svg/Logo";
-import { HeaderBanner } from "../../components/header-banner/header-banner";
 import { InputSearch } from "../../components/input-search/input-search";
 import { Cart } from "../../components/cart/cart";
 
@@ -32,8 +31,6 @@ export const Header = () => {
           </div>
         </div>
       </div>
-
-      <HeaderBanner />
     </>
   );
 };
