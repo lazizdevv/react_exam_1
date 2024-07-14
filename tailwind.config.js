@@ -14,7 +14,7 @@ export default {
       colors: {
         primary: '#274C5B', // dark gray color
         secondary: '#7EB693', // salmon color
-        accent: '#274C5B', // green color
+        accent: '#D4D4D4', // green color
         custom:'#F9F8F8',
       },
       container: {

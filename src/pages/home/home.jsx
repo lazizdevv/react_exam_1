@@ -6,6 +6,8 @@ import { productData } from "../../data/product-data";
 import { ProductCard } from "../../components/product-card/product-card";
 import { Button } from "../../components/ui/button";
 import { Arrow } from "../../components/arrow/arrow";
+import { galleryData } from "../../data/gallery";
+import { GalleryCard } from "../../components/gallery";
 
 export const Home = () => {
   return (
@@ -74,6 +76,14 @@ export const Home = () => {
           </div>
         </div>
       </section>
+
+      <div className="mx-auto max-w-[1920px]">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 py-[187px]">
+            {galleryData.map(gallery => (
+              <GalleryCard key={gallery.id} {...gallery} />
+            ))}
+        </div>
+      </div>
     </>
   );
 };
