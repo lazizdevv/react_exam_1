@@ -14,7 +14,7 @@ export const Button = ({
     <div className="">
       <button id={id} type={type} className={className + " btn " + variant}>
         {startIcon ? <span>{startIcon}</span> : ""} 
-        <span>{children}</span>
+        <span className='font-roboto font-bold text-xl leading-6'>{children}</span>
         {endIcon ? <span>{endIcon}</span> : ""} 
         </button>
     </div>
