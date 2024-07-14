@@ -1,0 +1,14 @@
+.primary{
+    padding: 28px 38px;
+
+    background: #000;
+    color: white;
+}
+
+
+
+.btn{
+    padding: 28px 38px;
+    background: #000;
+    color: red;
+}
