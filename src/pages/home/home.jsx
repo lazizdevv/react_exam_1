@@ -9,6 +9,7 @@ import { Arrow } from "../../components/arrow/arrow";
 import { galleryData } from "../../data/gallery";
 import { GalleryCard } from "../../components/gallery";
 import { HeaderBanner } from "../../components/header-banner/header-banner";
+import { NewsLatter } from "../../components/news-latter/news-latter";
 
 export const Home = () => {
   return (
@@ -85,6 +86,11 @@ export const Home = () => {
               <GalleryCard key={gallery.id} {...gallery} />
             ))}
         </div>
+      </div>
+
+
+      <div className="container">
+        <NewsLatter/>
       </div>
     </>
   );

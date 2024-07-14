@@ -16,6 +16,7 @@ export default {
         secondary: '#7EB693', // salmon color
         accent: '#D4D4D4', // green color
         custom:'#F9F8F8',
+        spacial:'#EFF6F1',
       },
       container: {
         center: true,
