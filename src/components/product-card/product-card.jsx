@@ -4,7 +4,7 @@ import { ProductRating } from "../product-rating/product-rating";
 export const ProductCard = ({ type, img, name, oldPrice, price,rating }) => {
   return (
     <>
-      <div className="rounded-[30px] pt-[30px] px-[30px] pb-5 relative h-[483px] bg-custom z-10">
+      <div className="rounded-[30px] pt-[30px] px-[30px] pb-5 relative h-[483px] bg-custom z-10 cursor-pointer hover:scale-105 transition-all">
         <span className="bg-primary text-white py-1 px-3 rounded-lg font-sans font-semibold text-base text-center absolute">
           {type}
         </span>

@@ -18,7 +18,7 @@ export const TestimonialCard = ({heading1, heading2,img,content,name,type,}) => 
             </div>
         </div>
 
-        <div className="grid grid-cols-4">
+        <div className="grid justify-center sm:grid-cols-2 lg:grid-cols-4">
             {countersData.map((counters) => (
                 <CountersCard key={counters.id} {...counters}/>
             ))}

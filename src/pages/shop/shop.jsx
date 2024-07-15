@@ -18,7 +18,7 @@ export const Shop = () => {
         </div>
       </section>
 
-      <div className="container">
+      <div className="container mt-20">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {productData.slice(0, 12).map((product) => (
             <Link to={`/shop-single/${product.id}`} key={product.id}>

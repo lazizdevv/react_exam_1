@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { productData } from "../../data/product-data";
 import { ProductCard } from "../../components/product-card/product-card";
 import { useParams } from "react-router-dom";
@@ -10,6 +11,12 @@ export const ShopSingle = () => {
   const obj = useParams();
   const data = productData.find((item) => item.id == obj.id);
 
+  useEffect(() => {
+    const element = document.getElementById('single');
+    if (element) {
+      element.scrollIntoView({ behavior: 'auto' });
+    }
+  }, [obj]);
 
   return (
     <>
@@ -23,7 +30,7 @@ export const ShopSingle = () => {
           </h1>
         </div>
       </section>
-      <div className="container">
+      <div id="single" className="container mt-20">
         <div className="grid justify-center lg:grid-cols-2">
           <div className="w-fit relative">
             <img className="w-[600px] h-[600px]" src={data?.img} alt="" />

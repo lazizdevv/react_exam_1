@@ -10,8 +10,8 @@ export const Footer = () => {
     <div className="container">
       <NewsLatter/>
 
-      <div className="flex justify-between gap-[50px] pb-[100px] flex-wrap">
-        <div className="flex flex-col gap-8 text-end w-[285px]">
+      <div className="flex  justify-center gap-[50px] pb-[100px] flex-wrap">
+        <div className="flex flex-col gap-8 text-center lg:text-end w-[285px]">
           <div className="font-roboto font-bold text-3xl text-primary">
             <h1>Contact Us</h1></div>                                                                     
           <div className="flex flex-col gap-1">
@@ -50,17 +50,17 @@ export const Footer = () => {
             </div>
         </div>
 
-        <div className="w-[285px] flex flex-col gap-6">
+        <div className="w-[285px] flex flex-col gap-6 text-center lg:text-start">
           <div className="font-roboto font-bold text-3xl text-primary">
             <h1>Utility Pages</h1>
           </div>
           
           <div className="flex flex-col gap-6 font-sans font-normal text-lg">
-            <a href="#">Style Guide</a>
-            <a href="#">404 Not Found</a>
-            <a href="#">Password Protected</a>
-            <a href="#">Licences</a>
-            <a href="#">Changelog</a>
+            <a className='hover:underline hover:font-medium' href="#">Style Guide</a>
+            <a className='hover:underline hover:font-medium' href="#">404 Not Found</a>
+            <a className='hover:underline hover:font-medium' href="#">Password Protected</a>
+            <a className='hover:underline hover:font-medium' href="#">Licences</a>
+            <a className='hover:underline hover:font-medium' href="#">Changelog</a>
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { Cart } from "../../components/cart/cart";
 export const Header = () => {
   return (
     <>
-      <div className="container bg-white py-[70px]">
+      <div className="max-w-[1595px] mx-auto bg-white py-[70px]">
         <div className="flex justify-between gap-5 items-center flex-wrap">
           <div className="flex items-center">
             <Link to={"/"}>
@@ -18,12 +18,12 @@ export const Header = () => {
             </Link>
           </div>
           <div className="flex gap-10 items-center justify-center flex-wrap font-roboto font-bold text-left text-primary text-xl">
-            <Link to={"/"}>Home</Link>
-            <Link to={"about"}>About</Link>
-            <Link to={"/"}>Pages</Link>
-            <Link to={"shop"}>Shop</Link>
-            <Link to={"/"}>Projects</Link>
-            <Link to={"/"}>News</Link>
+            <Link className="hover:underline" to={"/"}>Home</Link>
+            <Link className="hover:underline" to={"about"}>About</Link>
+            <Link className="hover:underline" to={"/"}>Pages</Link>
+            <Link className="hover:underline" to={"shop"}>Shop</Link>
+            <Link className="hover:underline" to={"/"}>Projects</Link>
+            <Link className="hover:underline" to={"/"}>News</Link>
           </div>
           <div className="flex gap-6 flex-wrap justify-center">
             <InputSearch />

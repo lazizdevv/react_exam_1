@@ -12,9 +12,9 @@ export default {
         tail:['Yellowtail', 'cursive'],
       },
       colors: {
-        primary: '#274C5B', // dark gray color
-        secondary: '#7EB693', // salmon color
-        accent: '#D4D4D4', // green color
+        primary: '#274C5B',
+        secondary: '#7EB693',
+        accent: '#D4D4D4',
         custom:'#F9F8F8',
         spacial:'#EFF6F1',
         secondaryText:'#525C60',
