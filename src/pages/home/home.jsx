@@ -12,6 +12,9 @@ import { HeaderBanner } from "../../components/header-banner/header-banner";
 import { NewsLatter } from "../../components/news-latter/news-latter";
 import { blogData } from "../../data/blog-data";
 import { BlogCard } from "../../components/blog/blog-card";
+import { testimonialData } from "../../data/testimonial-data";
+import { TestimonialCard } from "../../components/testimonial/testimonial-card";
+import testimonialbg from '../../assets/images/testimonial-bg.png'
 
 export const Home = () => {
   return (
@@ -52,6 +55,16 @@ export const Home = () => {
           </div>
         </div>
       </div>
+
+      <section className="bg-center bg-no-repeat py-[164px] max-w-[1920px] mx-auto" style={{backgroundImage: `url(${testimonialbg})`}}>
+        <div className="container">
+          <div className="">
+            {testimonialData.map((testimonial) => (
+              <TestimonialCard key={testimonial.id} {...testimonial}/>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="bg-primary">
         <div className="container py-[200px]">
@@ -116,7 +129,6 @@ export const Home = () => {
               ))}
             </div>
       </div>
-
 
       <div className="container">
         <NewsLatter/>

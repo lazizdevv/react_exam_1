@@ -17,6 +17,7 @@ export default {
         accent: '#D4D4D4', // green color
         custom:'#F9F8F8',
         spacial:'#EFF6F1',
+        secondaryText:'#525C60',
       },
       container: {
         center: true,
