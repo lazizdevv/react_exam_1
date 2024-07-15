@@ -1,5 +1,4 @@
 import React from "react";
-import star from "../../assets/images/products/star.png";
 import { ProductRating } from "../product-rating/product-rating";
 
 export const ProductCard = ({ type, img, name, oldPrice, price,rating }) => {

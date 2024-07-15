@@ -8,7 +8,6 @@ export const Button = ({
     variant,
     startIcon,
     endIcon,
-
 }) => {
   return (
     <div className="">

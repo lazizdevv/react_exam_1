@@ -1,12 +1,10 @@
 import { nanoid } from "nanoid"
-
 import { ReturnIcon } from "../assets/svg/choose-us/ReturnIcon";
 import { NaturalIcon } from "../assets/svg/choose-us/NaturalIcon";
 import { PhoneTimeIcon } from "../assets/svg/choose-us/PhoneTimeIcon";
 import { CardSecurityIcon } from "../assets/svg/choose-us/CardSecurityIcon";
 
 import chooseContentBg from '../assets/images/choose-content-bg.jpg'
-
 
 export const chooseUsContentData = [
     {

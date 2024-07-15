@@ -1,1 +1,1 @@
-export * from './choose-us-content'
+export * from './choose-us-content';

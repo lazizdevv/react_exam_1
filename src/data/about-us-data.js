@@ -26,7 +26,6 @@ export const aboutUsHomeData = [
     }
 ]
 
-
 export const aboutUsData = [
     {
         id:nanoid(),
