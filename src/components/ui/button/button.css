@@ -25,3 +25,15 @@
     letter-spacing: 0%;
     text-align: left;
 }
+
+
+.info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 28px 38px;
+    width: 220px;
+    border-radius: 16px;
+    background: #EFF6F1;
+    color: rgb(39, 76, 91);
+}

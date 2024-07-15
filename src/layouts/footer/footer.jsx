@@ -2,11 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Logo } from '../../assets/svg/Logo'
 import { SocialCard } from '../../components/social-card'
+import { NewsLatter } from '../../components/news-latter/news-latter'
 
 export const Footer = () => {
   return (
     <>
-    <div className="container mt-[50px]">
+    <div className="container">
+      <NewsLatter/>
+
       <div className="flex justify-between gap-[50px] pb-[100px] flex-wrap">
         <div className="flex flex-col gap-8 text-end w-[285px]">
           <div className="font-roboto font-bold text-3xl text-primary">

@@ -1,6 +1,6 @@
 import React from "react";
 import { OfferBanner } from "./components/offer-banner";
-import { offerProduct, offerBanner } from "../../data/offer-data";
+import { offerBanner } from "../../data/offer-data";
 import { AboutUs } from "../../components/about-us";
 import { productData } from "../../data/product-data";
 import { ProductCard } from "../../components/product-card/product-card";
@@ -9,7 +9,6 @@ import { Arrow } from "../../components/arrow/arrow";
 import { galleryData } from "../../data/gallery";
 import { GalleryCard } from "../../components/gallery";
 import { HeaderBanner } from "../../components/header-banner/header-banner";
-import { NewsLatter } from "../../components/news-latter/news-latter";
 import { blogData } from "../../data/blog-data";
 import { BlogCard } from "../../components/blog/blog-card";
 import { testimonialData } from "../../data/testimonial-data";
@@ -19,6 +18,7 @@ import whoWeAreBg from '../../assets/images/who-we-are-bg.png'
 import { WhoWeAreCard } from "../../components/who-we";
 import { aboutUsHomeData } from "../../data/about-us-data";
 import aboutUsHomeBg from '../../assets/images/about-us-home-bg.png'
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -34,7 +34,7 @@ export const Home = () => {
         <section className="bg-[-90px]  bg-no-repeat max-w-[1920px] mx-auto py-[186px] mb-[176px] bg-[#f9f8f8]" style={{backgroundImage: `url(${aboutUsHomeBg})`}}>
           <div className="flex justify-end ">
           {aboutUsHomeData.map((aboutUs) => (
-            <AboutUs key={aboutUs.id} {...aboutUs} icon1={aboutUs.points.point1.icon} icon2={aboutUs.points.point2.icon} />
+            <AboutUs key={aboutUs.id} {...aboutUs} icon1={aboutUs.points.point1.icon} icon2={aboutUs.points.point2.icon} btnChild={'Shop Now'} />
           ))}
           </div>
         </section>
@@ -49,8 +49,11 @@ export const Home = () => {
             </h1>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {productData.map((product) => (
+            {productData.slice(0,8).map((product) => (
+              <Link to={`/shop-single/${product.id}`} key={product.id}>
+
               <ProductCard key={product.id} {...product} />
+              </Link>
             ))}
           </div>
 
@@ -96,8 +99,11 @@ export const Home = () => {
             </div>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            {offerProduct.map((offerProduct) => (
+            {productData.slice(12,16).map((offerProduct) => (
+              <Link to={`/shop-single/${offerProduct.id}`} key={offerProduct.id}>
+              
               <ProductCard key={offerProduct.id} {...offerProduct} />
+              </Link>
             ))}
           </div>
         </div>
@@ -142,10 +148,6 @@ export const Home = () => {
                 <BlogCard key={blog.id} {...blog} />
               ))}
             </div>
-      </div>
-
-      <div className="container">
-        <NewsLatter/>
       </div>
     </>
   );

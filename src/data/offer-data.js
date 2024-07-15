@@ -2,10 +2,10 @@ import { nanoid } from "nanoid";
 import offer1 from "../assets/images/offers/offer1.png";
 import offer2 from "../assets/images/offers/offer2.png";
 
-import product1 from '../assets/images/offer-product/offer1.png'
-import product2 from '../assets/images/offer-product/offer2.png'
-import product3 from '../assets/images/offer-product/offer3.png'
-import product4 from '../assets/images/offer-product/offer4.png'
+import aboutOffer1 from '../assets/images/about-offer/about-offer1.jpg'
+import aboutOffer2 from '../assets/images/about-offer/about-offer2.jpg'
+import aboutOffer3 from '../assets/images/about-offer/about-offer3.jpg'
+import aboutOffer4 from '../assets/images/about-offer/about-offer4.jpg'
 
 export const offerBanner = [
     {
@@ -26,37 +26,25 @@ export const offerBanner = [
     },
 ]
 
-export const offerProduct = [
+export const aboutOfferProduct = [
     {
-        type:'Vegetable',
-        img:product1,
-        name:'Calabrese Broccoli',
-        oldPrice:'$20.00',
-        price:'$13.00',
-        id:nanoid()
+        id:nanoid(),
+        img:aboutOffer1,
+        name:'Spicy',
     },
     {
-        type:'Vegetable',
-        img:product2,
-        name:'Calabrese Broccoli',
-        oldPrice:'$20.00',
-        price:'$13.00',
-        id:nanoid()
+        id:nanoid(),
+        img:aboutOffer2,
+        name:'Nuts & Feesd',
     },
     {
-        type:'Vegetable',
-        img:product3,
-        name:'Calabrese Broccoli',
-        oldPrice:'$20.00',
-        price:'$13.00',
-        id:nanoid()
+        id:nanoid(),
+        img:aboutOffer3,
+        name:'Fruits',
     },
     {
-        type:'Vegetable',
-        img:product4,
-        name:'Calabrese Broccoli',
-        oldPrice:'$20.00',
-        price:'$13.00',
-        id:nanoid()
+        id:nanoid(),
+        img:aboutOffer4,
+        name:'Vegetable',
     },
 ]

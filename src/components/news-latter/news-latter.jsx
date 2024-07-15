@@ -5,11 +5,11 @@ import { Button } from '../ui/button'
 export const NewsLatter = () => {
   return (
     <>
-        <div className="w-full py-[105px] px-[71px] bg-left bg-no-repeat rounded-[33px] mb-20" style={{backgroundImage: `url(${newsLatterBg})`}}>
-            <div className="flex justify-between items-center">
+        <div className="w-full py-[105px] px-[71px] bg-left bg-no-repeat rounded-[33px] mb-28 mt-36" style={{backgroundImage: `url(${newsLatterBg})`}}>
+            <div className="flex justify-between items-center flex-wrap">
                 <h1 className='font-roboto font-extrabold text-5xl leading-[59px] text-white max-w-[357px]'>Subscribe to our Newsletter</h1>
-                <div className="flex gap-2">
-                    <input className='w-[349px] rounded-2xl text-left py-7 px-6 font-roboto font-normal italic text-lg text-[#ababab] leading-5 outline-none focus:outline-4 focus:outline-primary' type="text" placeholder='Your Email Address'/>
+                <div className="flex gap-2 flex-wrap justify-center">
+                    <input className='lg:w-[349px] rounded-2xl text-left py-7 px-6 font-roboto font-normal italic text-lg text-[#ababab] leading-5 outline-none focus:outline-4 focus:outline-primary' type="text" placeholder='Your Email Address'/>
                     <Button children={'Subscribe'} variant={'primary'}className="justify-center" />
                 </div>
             </div>

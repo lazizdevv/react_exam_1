@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <>
       <div className="container bg-white py-[70px]">
-        <div className="flex justify-between items-center flex-wrap">
+        <div className="flex justify-between gap-5 items-center flex-wrap">
           <div className="flex items-center">
             <Link to={"/"}>
               <div className="flex items-center gap-2 ">
@@ -17,7 +17,7 @@ export const Header = () => {
               </div>
             </Link>
           </div>
-          <div className="flex gap-10 items-center justify-center font-roboto font-bold text-left text-primary text-xl">
+          <div className="flex gap-10 items-center justify-center flex-wrap font-roboto font-bold text-left text-primary text-xl">
             <Link to={"/"}>Home</Link>
             <Link to={"about"}>About</Link>
             <Link to={"/"}>Pages</Link>
@@ -25,7 +25,7 @@ export const Header = () => {
             <Link to={"/"}>Projects</Link>
             <Link to={"/"}>News</Link>
           </div>
-          <div className="flex gap-6">
+          <div className="flex gap-6 flex-wrap justify-center">
             <InputSearch />
             <Cart/>
           </div>

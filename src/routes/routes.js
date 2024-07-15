@@ -21,7 +21,7 @@ export const routes = [
     },
     {
         component:ShopSingle,
-        path:"shop-single",
+        path:"shop-single/:id",
         id:nanoid()
     },
 ]
