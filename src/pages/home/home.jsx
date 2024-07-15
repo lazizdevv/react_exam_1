@@ -10,6 +10,8 @@ import { galleryData } from "../../data/gallery";
 import { GalleryCard } from "../../components/gallery";
 import { HeaderBanner } from "../../components/header-banner/header-banner";
 import { NewsLatter } from "../../components/news-latter/news-latter";
+import { blogData } from "../../data/blog-data";
+import { BlogCard } from "../../components/blog/blog-card";
 
 export const Home = () => {
   return (
@@ -86,6 +88,33 @@ export const Home = () => {
               <GalleryCard key={gallery.id} {...gallery} />
             ))}
         </div>
+      </div>
+
+      <div className="container">
+      <div className="flex items-end justify-between flex-wrap gap-5 mb-11">
+            <div className="max-w-[702px]">
+              <p className="font-tail font-normal text-4xl leading-[49px] text-secondary text-center lg:text-left">
+                Offer
+              </p>
+              <h1 className="font-roboto font-extrabold text-[50px] text-left leading-[59px] text-primary">
+              Discover weekly content about organic food, & more
+              </h1>
+            </div>
+
+            <div className="flex justify-center w-full lg:w-fit">
+              <Button
+                children={"More News"}
+                variant={"primary"}
+                className={"bg-white text-primary border-2 border-primary"}
+                endIcon={<Arrow />}
+              />
+            </div>
+          </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 ">
+              {blogData.map(blog => (
+                <BlogCard key={blog.id} {...blog} />
+              ))}
+            </div>
       </div>
 
 

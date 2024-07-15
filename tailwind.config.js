@@ -25,6 +25,9 @@ export default {
           lg: "1440px",
         },
       },
+      boxShadow: {
+        custom: '0 20px 35px 0 rgba(167, 167, 167, 0.25)',
+      },
     },
   },
   plugins: [],

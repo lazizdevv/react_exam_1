@@ -5,7 +5,7 @@ import { Button } from '../ui/button'
 export const NewsLatter = () => {
   return (
     <>
-        <div className="w-full py-[105px] px-[71px] bg-left bg-no-repeat rounded-[33px]" style={{backgroundImage: `url(${newsLatterBg})`}}>
+        <div className="w-full py-[105px] px-[71px] bg-left bg-no-repeat rounded-[33px] mb-20" style={{backgroundImage: `url(${newsLatterBg})`}}>
             <div className="flex justify-between items-center">
                 <h1 className='font-roboto font-extrabold text-5xl leading-[59px] text-white max-w-[357px]'>Subscribe to our Newsletter</h1>
                 <div className="flex gap-2">
