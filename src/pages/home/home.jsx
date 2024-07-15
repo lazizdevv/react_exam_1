@@ -15,6 +15,8 @@ import { BlogCard } from "../../components/blog/blog-card";
 import { testimonialData } from "../../data/testimonial-data";
 import { TestimonialCard } from "../../components/testimonial/testimonial-card";
 import testimonialbg from '../../assets/images/testimonial-bg.png'
+import whoWeAreBg from '../../assets/images/who-we-are-bg.png'
+import { WhoWeAreCard } from "../../components/who-we";
 
 export const Home = () => {
   return (
@@ -93,6 +95,12 @@ export const Home = () => {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="max-w-[1600px] bg-left bg-no-repeat mx-auto py-[100px]" style={{backgroundImage: `url(${whoWeAreBg})`}}>
+            <div className="flex justify-end">
+                <WhoWeAreCard/>
+            </div>
       </section>
 
       <div className="mx-auto max-w-[1920px]">
