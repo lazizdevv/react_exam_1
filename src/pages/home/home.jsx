@@ -17,6 +17,8 @@ import { TestimonialCard } from "../../components/testimonial/testimonial-card";
 import testimonialbg from '../../assets/images/testimonial-bg.png'
 import whoWeAreBg from '../../assets/images/who-we-are-bg.png'
 import { WhoWeAreCard } from "../../components/who-we";
+import { aboutUsHomeData } from "../../data/about-us-data";
+import aboutUsHomeBg from '../../assets/images/about-us-home-bg.png'
 
 export const Home = () => {
   return (
@@ -29,9 +31,13 @@ export const Home = () => {
           ))}
         </div>
 
-        <div className="">
-          <AboutUs />
-        </div>
+        <section className="bg-[-90px]  bg-no-repeat max-w-[1920px] mx-auto py-[186px] mb-[176px] bg-[#f9f8f8]" style={{backgroundImage: `url(${aboutUsHomeBg})`}}>
+          <div className="flex justify-end ">
+          {aboutUsHomeData.map((aboutUs) => (
+            <AboutUs key={aboutUs.id} {...aboutUs} icon1={aboutUs.points.point1.icon} icon2={aboutUs.points.point2.icon} />
+          ))}
+          </div>
+        </section>
 
         <div className="">
           <div className="mb-10">
