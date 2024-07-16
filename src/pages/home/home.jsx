@@ -1,24 +1,27 @@
 import React from "react";
-import { OfferBanner } from "./components/offer-banner";
-import { offerBanner } from "../../data/offer-data";
-import { AboutUs } from "../../components/about-us";
-import { productData } from "../../data/product-data";
-import { ProductCard } from "../../components/product-card/product-card";
-import { Button } from "../../components/ui/button";
-import { Arrow } from "../../components/arrow/arrow";
-import { galleryData } from "../../data/gallery";
-import { GalleryCard } from "../../components/gallery";
-import { HeaderBanner } from "../../components/header-banner/header-banner";
-import { blogData } from "../../data/blog-data";
-import { BlogCard } from "../../components/blog/blog-card";
-import { testimonialData } from "../../data/testimonial-data";
-import { TestimonialCard } from "../../components/testimonial/testimonial-card";
-import testimonialbg from '../../assets/images/testimonial-bg.png'
-import whoWeAreBg from '../../assets/images/who-we-are-bg.png'
-import { WhoWeAreCard } from "../../components/who-we";
-import { aboutUsHomeData } from "../../data/about-us-data";
-import aboutUsHomeBg from '../../assets/images/about-us-home-bg.png'
 import { Link } from "react-router-dom";
+// components
+import { OfferBanner } from "./components/offer-banner";
+import { AboutUs } from "../../components/about-us";
+import { ProductCard } from "../../components/product-card";
+import { Arrow } from "../../components/arrow";
+import { GalleryCard } from "../../components/gallery";
+import { HeaderBanner } from "../../components/header-banner";
+import { Button } from "../../components/ui/button";
+import { BlogCard } from "../../components/blog";
+import { TestimonialCard } from "../../components/testimonial";
+import { WhoWeAreCard } from "../../components/who-we";
+// data
+import { offerBanner } from "../../data/offer-data";
+import { productData } from "../../data/product-data";
+import { galleryData } from "../../data/gallery";
+import { blogData } from "../../data/blog-data";
+import { aboutUsHomeData } from "../../data/about-us-data";
+import { testimonialData } from "../../data/testimonial-data";
+// images
+import testimonialbg from '../../assets/images/testimonial-bg.png';
+import whoWeAreBg from '../../assets/images/who-we-are-bg.png';
+import aboutUsHomeBg from '../../assets/images/about-us-home-bg.png';
 
 export const Home = () => {
   return (

@@ -1,10 +1,13 @@
 import React from "react";
 import { useEffect } from "react";
-import { productData } from "../../data/product-data";
-import { ProductCard } from "../../components/product-card/product-card";
 import { useParams } from "react-router-dom";
+// components
+import { ProductCard } from "../../components/product-card";
 import { Button } from "../../components/ui/button";
-import { Arrow } from "../../components/arrow/arrow";
+import { Arrow } from "../../components/arrow";
+// data
+import { productData } from "../../data/product-data";
+// images
 import shopSingleBg from "../../assets/images/shop-single-banner-bg.png"
 
 export const ShopSingle = () => {

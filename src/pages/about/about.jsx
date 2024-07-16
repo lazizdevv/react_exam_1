@@ -1,14 +1,17 @@
 import React from "react";
+// components
 import { AboutUs } from "../../components/about-us";
+import { TeamCard } from "../../components/team-card";
+import { AboutOfferCard } from "../../components/about-offer";
+import { ChooseUsContent } from "../../components/choose-us-content";
+// data
+import { chooseUsContentData } from "../../data/why-choose-us-data";
+import { aboutOfferProduct } from "../../data/offer-data";
 import { aboutUsData } from "../../data/about-us-data";
+import { teamData } from "../../data/team-data";
+// images
 import aboutUsHomeBg from "../../assets/images/about-us-bg.png";
 import aboutBanner from "../../assets/images/about-banner.png";
-import { teamData } from "../../data/team-data";
-import { TeamCard } from "../../components/team-card/team-card";
-import { aboutOfferProduct } from "../../data/offer-data";
-import { AboutOfferCard } from "../../components/about-offer";
-import { ChooseUsContent } from "../../components/choose-us-content/choose-us-content";
-import { chooseUsContentData } from "../../data/why-choose-us-data";
 
 export const About = () => {
   return (

@@ -1,8 +1,11 @@
 import React from "react";
-import shopBannerBg from "../../assets/images/shop-banner-bg.png";
-import { productData } from "../../data/product-data";
-import { ProductCard } from "../../components/product-card/product-card";
 import { Link } from "react-router-dom";
+// components
+import { ProductCard } from "../../components/product-card";
+// data
+import { productData } from "../../data/product-data";
+// images
+import shopBannerBg from "../../assets/images/shop-banner-bg.png";
 
 export const Shop = () => {
   return (
