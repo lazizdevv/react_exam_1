@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Logo } from "../../assets/svg/Logo";
-import { InputSearch } from "../../components/input-search/input-search";
-import { Cart } from "../../components/cart/cart";
+import { InputSearch } from "../../components/input-search";
+import { Cart } from "../../components/cart";
 
 export const Header = () => {
   return (

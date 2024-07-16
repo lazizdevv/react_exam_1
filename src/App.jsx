@@ -1,7 +1,7 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import { MainLayout } from './layouts/main-layout'
-import { routes } from './routes/routes'
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { MainLayout } from './layouts/main-layout';
+import { routes } from './routes/routes';
 
 const App = () => {
   return (
